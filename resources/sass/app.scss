@@ -10,22 +10,32 @@
 // Legend
 .legend-container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding-top: 20px;
+}
+
+.legend h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .legend {
     border: 1px solid #000;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    max-width: 800px;
 }
 
 .legend ul {
     list-style-type: none;
     padding: 0;
+    margin: 0 20px;
 }
 
 .legend li {
