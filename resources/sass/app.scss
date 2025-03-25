@@ -15,34 +15,49 @@
     padding-top: 20px;
 }
 
-.legend h2 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
 .legend {
     border: 1px solid #000;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
     width: auto;
-    max-width: 800px;
+    max-width: 400px;
+}
+
+.legend h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.legend-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
 }
 
 .legend ul {
     list-style-type: none;
     padding: 0;
-    margin: 0 20px;
+    margin: 0;
+    min-width: 150px; 
 }
 
 .legend li {
-    margin: 10px 0;
+    white-space: nowrap;
 }
 
-// Card
-.card {
+.legend li strong {
+    display: inline-block;
+    width: 15px; 
+}
+
+.legend-content > ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 150px;
     border: 1px solid #000;
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
 }

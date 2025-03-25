@@ -3,8 +3,9 @@
 
     <!-- legend -->
     <div class="legend-container">
-        <div class="legend">
-            <h2>Legend:</h2>
+    <div class="legend">
+        <h2>Legend:</h2>
+        <div class="legend-content">
             <ul>
                 <li><strong>On time</strong>
                     <ul>
@@ -12,7 +13,9 @@
                         <li><strong>0:</strong> Late</li>
                     </ul>
                 </li>
-                <li><strong>Cancelled</strong>
+            </ul>
+            <ul>
+                <li><strong>Deleted</strong>
                     <ul>
                         <li><strong>1:</strong> Deleted</li>
                         <li><strong>0:</strong> Active</li>
@@ -21,6 +24,9 @@
             </ul>
         </div>
     </div>
+</div>
+
+
     <hr>
 
     <!-- trains -->

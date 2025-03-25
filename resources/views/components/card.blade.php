@@ -1,6 +1,6 @@
 @props(['trains'])
 
-<table class="table table-bordered">
+<table class="table table-bordered text-center">
     <thead>
         <tr>
             <th scope="col">Company</th>
@@ -15,8 +15,8 @@
         </tr>
     </thead>
     <tbody>
-        @foreach ($trains as $train)
-            <tr>
+        @foreach ($trains as $index => $train)
+            <tr class="{{ $index % 2 == 0 ? 'table-success' : '' }}">
                 <td>{{ $train->company }}</td>
                 <td>{{ $train->departure_station }}</td>
                 <td>{{ $train->arrival_station }}</td>
